@@ -8,11 +8,15 @@
   <ol>
     <% @facade.members.each do |member| %>
       <li class='member'>
-        <p>Photo: <%= image_tag(member.photo_url) %></p>
-        <p>Name: <%= member.name %></p>
-        <p>Allies: <%= member.allies.join(", ") %></p>
-        <p>Enemies: <%= member.enemies.join(", ") %></p>
-        <p>Affiliation: <%= member.affiliation %></p>
+        <ul>
+          <% if member.photo_url %>
+            <p class='char_img'>Photo: <%= image_tag(member.photo_url) %></p>
+          <% end %>
+          <p>Name: <%= member.name %></p>
+          <p>Allies: <%= member.allies.join(", ") %></p>
+          <p>Enemies: <%= member.enemies.join(", ") %></p>
+          <p>Affiliation: <%= member.affiliation %></p>
+        </ul>
       </li>
     <% end %>
   </ol>

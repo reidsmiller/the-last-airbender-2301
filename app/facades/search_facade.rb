@@ -3,6 +3,10 @@ class SearchFacade
     @nation = nation
   end
 
+  def nation
+    @nation.split('+').map(&:capitalize).join(' ')
+  end
+
   def members
     @members = members_data[0..24].map do |member_data|
       Member.new(member_data)
