@@ -16,7 +16,7 @@ class SearchFacade
   private
 
   def service
-    @_service ||= SearchService.new
+    @_service ||= LastAirbenderService.new
   end
 
   def members_data
