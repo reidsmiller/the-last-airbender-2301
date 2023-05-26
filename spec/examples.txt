@@ -1,0 +1,11 @@
+example_id                                            | status | run_time        |
+----------------------------------------------------- | ------ | --------------- |
+./spec/facades/search_facade_spec.rb[1:1]             | passed | 0.41226 seconds |
+./spec/facades/search_facade_spec.rb[1:2]             | passed | 0.2607 seconds  |
+./spec/features/search/index_spec.rb[1:1:1]           | passed | 0.83598 seconds |
+./spec/features/search/index_spec.rb[1:1:2]           | passed | 0.70438 seconds |
+./spec/features/welcome/index_spec.rb[1:1:1]          | passed | 0.62144 seconds |
+./spec/poros/member_spec.rb[1:1]                      | passed | 0.0015 seconds  |
+./spec/poros/member_spec.rb[1:2:1:1]                  | passed | 0.00091 seconds |
+./spec/poros/member_spec.rb[1:2:2:1]                  | passed | 0.00076 seconds |
+./spec/services/last_airbender_service_spec.rb[1:1:1] | passed | 0.32956 seconds |
