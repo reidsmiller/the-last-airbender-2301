@@ -10,7 +10,7 @@ class SearchFacade
   end
 
   def member_count
-    @count = members_data.count
+    @count = members_count_data.count
   end
 
   private
@@ -21,5 +21,9 @@ class SearchFacade
 
   def members_data
     @members_data ||= service.get_members(@nation)
+  end
+
+  def members_count_data
+    @members_count_data ||= service.get_member_count(@nation)
   end
 end

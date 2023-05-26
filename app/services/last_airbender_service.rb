@@ -2,6 +2,10 @@ class LastAirbenderService
   def get_members(nation)
     get_url("/api/v1/characters?affiliation=#{nation}&perPage=25")
   end
+
+  def get_member_count(nation)
+    get_url("/api/v1/characters?affiliation=#{nation}&perPage=150")
+  end
   
   def get_url(url)
     response = conn.get(url)
