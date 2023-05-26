@@ -8,7 +8,7 @@ class SearchFacade
   end
 
   def members
-    @members = members_data[0..24].map do |member_data|
+    @members = members_data.map do |member_data|
       Member.new(member_data)
     end
   end
