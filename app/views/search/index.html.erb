@@ -1,0 +1,19 @@
+<h1>Members of the <%= @facade.nation.capitalize %></h1>
+
+<div class='total_members'>
+  <p>Total Number of People: <%= @facade.member_count %></p>
+</div>
+
+<div class='member_data'>
+  <ol>
+    <% @facade.members.each do |member| %>
+      <li class='member'>
+        <p>Photo: <%= image_tag(member.photo_url) %></p>
+        <p>Name: <%= member.name %></p>
+        <p>Allies: <%= member.allies.join(", ") %></p>
+        <p>Enemies: <%= member.enemies.join(", ") %></p>
+        <p>Affiliation: <%= member.affiliation %></p>
+      </li>
+    <% end %>
+  </ol>
+</div>

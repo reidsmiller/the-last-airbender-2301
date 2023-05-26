@@ -14,6 +14,7 @@ RSpec.describe 'Search Index Page' do
 
     it 'I can see detailed information for the first 25 members of the Fire Nation' do
       expect(page).to have_css('.member', count: 25)
+      expect(page).to have_css('.char_img', count: 25)
       expect(page).to have_content('Name: Chan (Fire Nation admiral)')
       expect(page).to have_content('Allies: Ozai')
       expect(page).to have_content('Enemies: Earth Kingdom')
