@@ -13,8 +13,8 @@
             <p class='char_img'>Photo: <%= image_tag(member.photo_url) %></p>
           <% end %>
           <p>Name: <%= member.name %></p>
-          <p>Allies: <%= member.allies.join(", ") %></p>
-          <p>Enemies: <%= member.enemies.join(", ") %></p>
+          <p>Allies: <%= member.allies_list %></p>
+          <p>Enemies: <%= member.enemies_list %></p>
           <p>Affiliation: <%= member.affiliation %></p>
         </ul>
       </li>
