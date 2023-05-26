@@ -9,10 +9,10 @@
     <% @facade.members.each do |member| %>
       <li class='member'>
         <ul>
+          <h4>Name: <%= member.name %></h4>
           <% if member.photo_url %>
-            <p class='char_img'>Photo: <%= image_tag(member.photo_url) %></p>
+            <p class='char_img'><%= image_tag(member.photo_url) %></p>
           <% end %>
-          <p>Name: <%= member.name %></p>
           <p>Allies: <%= member.allies_list %></p>
           <p>Enemies: <%= member.enemies_list %></p>
           <p>Affiliation: <%= member.affiliation %></p>
